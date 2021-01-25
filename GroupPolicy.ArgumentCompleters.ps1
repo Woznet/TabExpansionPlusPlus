@@ -16,7 +16,7 @@ function GroupPolicy_GPONameArgumentCompletion
         Where-Object {$_.DisplayName -like "$wordToComplete*"} |
         Sort-Object -Property DisplayName |
         ForEach-Object {
-            $ToolTip = "Name: {0} - GUID: {1}" -f $_.DisplayName,$_.Id 
+            $ToolTip = "Name: {0} - GUID: {1}" -f $_.DisplayName,$_.Id
             New-CompletionResult -CompletionText $_.DisplayName -ToolTip $ToolTip
         }
 }
@@ -35,7 +35,7 @@ function GroupPolicy_GPOGUIDArgumentCompletion
         Where-Object {$_.DisplayName -like "$wordToComplete*"} |
         Sort-Object -Property DisplayName |
         ForEach-Object {
-            $ToolTip = "Name: {0} - GUID: {1}" -f $_.DisplayName,$_.Id 
+            $ToolTip = "Name: {0} - GUID: {1}" -f $_.DisplayName,$_.Id
             New-CompletionResult -CompletionText $_.Id -ToolTip $ToolTip -ListItemText $_.DisplayName
         }
 }
@@ -52,11 +52,11 @@ function GroupPolicy_StarterGPONameArgumentCompletion
         $optionalDomain.Domain = $Domain
     }
 
-    GroupPolicy\Get-GPStarterGPO -All @optionalDomain | 
+    GroupPolicy\Get-GPStarterGPO -All @optionalDomain |
         Where-Object {$_.DisplayName -like "$wordToComplete*"} |
         Sort-Object -Property DisplayName |
         ForEach-Object {
-            $ToolTip = "Name: {0} - GUID: {1}" -f $_.DisplayName,$_.Id 
+            $ToolTip = "Name: {0} - GUID: {1}" -f $_.DisplayName,$_.Id
             New-CompletionResult -CompletionText $_.DisplayName -ToolTip $ToolTip
         }
 }
@@ -71,11 +71,11 @@ function GroupPolicy_StarterGPOGUIDArgumentCompletion
         $optionalDomain.Domain = $Domain
     }
 
-    GroupPolicy\Get-GPStarterGPO -All @optionalDomain | 
+    GroupPolicy\Get-GPStarterGPO -All @optionalDomain |
         Where-Object {$_.DisplayName -like "$wordToComplete*"} |
         Sort-Object -Property DisplayName |
         ForEach-Object {
-            $ToolTip = "Name: {0} - GUID: {1}" -f $_.DisplayName,$_.Id 
+            $ToolTip = "Name: {0} - GUID: {1}" -f $_.DisplayName,$_.Id
             New-CompletionResult -CompletionText $_.Id -ToolTip $ToolTip -ListItemText $_.DisplayName
         }
 }

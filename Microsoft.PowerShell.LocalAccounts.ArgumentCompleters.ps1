@@ -43,7 +43,7 @@ function LocalAccounts_LocalGroupNameArgumentCompletion
     Microsoft.PowerShell.LocalAccounts\Get-LocalGroup -Name "$wordToComplete*" |
         Sort-Object -Property Name |
         ForEach-Object {
-            $ToolTip = "Name: {0} - SID: {1}" -f $_.Name,$_.Sid 
+            $ToolTip = "Name: {0} - SID: {1}" -f $_.Name,$_.Sid
             New-CompletionResult -CompletionText $_.Name -ToolTip $ToolTip
         }
 }
@@ -56,7 +56,7 @@ function LocalAccounts_LocalGroupSIDArgumentCompletion
     Microsoft.PowerShell.LocalAccounts\Get-LocalGroup -Name "$wordToComplete*" |
         Sort-Object -Property Name |
         ForEach-Object {
-            $ToolTip = "Name: {0} - SID: {1}" -f $_.Name,$_.Sid 
+            $ToolTip = "Name: {0} - SID: {1}" -f $_.Name,$_.Sid
             New-CompletionResult -CompletionText $_.SID -ToolTip $ToolTip -ListItemText $_.Name
         }
 }
@@ -70,13 +70,13 @@ function LocalAccounts_LocalGroupGroupArgumentCompletion
         Sort-Object -Property Name |
         ForEach-Object {
             $ToolTip = "Name: {0} - SID: {1}" -f $_.Name,$_.Sid
-            $CompletionText = "(Get-LocalGroup -Name '{0}')" -f $_.Name 
+            $CompletionText = "(Get-LocalGroup -Name '{0}')" -f $_.Name
             New-CompletionResult -CompletionText $CompletionText -ToolTip $ToolTip -ListItemText $_.Name -NoQuotes
         }
 }
 
 # LOCALGROUPMEMBER -MEMBER
-function LocalAccounts_LocalGroupMemberMemberArgumentCompletion    
+function LocalAccounts_LocalGroupMemberMemberArgumentCompletion
 {
     param($commandName, $parameterName, $wordToComplete, $commandAst, $fakeBoundParameter)
 
@@ -143,4 +143,4 @@ Register-ArgumentCompleter `
     -Command ('Get-LocalGroupMember','Remove-LocalGroupMember') `
     -Parameter 'Member' `
     -Description 'Complete local group names, for example: Get-LocalGroupMember -Name <TAB>' `
-    -ScriptBlock $function:LocalAccounts_LocalGroupMemberMemberArgumentCompletion    
+    -ScriptBlock $function:LocalAccounts_LocalGroupMemberMemberArgumentCompletion

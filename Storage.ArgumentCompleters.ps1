@@ -1,4 +1,4 @@
-﻿## Storage module Custom Completers ##
+## Storage module Custom Completers ##
 
 #
 # .SYNOPSIS

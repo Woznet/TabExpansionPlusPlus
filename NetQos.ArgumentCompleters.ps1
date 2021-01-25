@@ -12,7 +12,7 @@ function NetQoS_PolicyNameArgumentCompletion
         $optionalCim.CimSession = $cim
     }
 
-    NetQos\Get-NetQosPolicy -Name "$wordToComplete*" @optionalCim | 
+    NetQos\Get-NetQosPolicy -Name "$wordToComplete*" @optionalCim |
         Sort-Object -Property Name |
         ForEach-Object {
             $ToolTip = "Name: {0} - Owner: {1} - Throttle Rate: {2:N0} bits/sec" -f $_.Name,$_.Owner,$_.ThrottleRate

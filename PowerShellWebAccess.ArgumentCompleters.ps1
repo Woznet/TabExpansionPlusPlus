@@ -1,4 +1,4 @@
-﻿## PowerShellWebAccess module Custom Completers ##
+## PowerShellWebAccess module Custom Completers ##
 
 #
 # .SYNOPSIS

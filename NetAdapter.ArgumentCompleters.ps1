@@ -1,4 +1,4 @@
-﻿## NetAdapter module Custom Completers ##
+## NetAdapter module Custom Completers ##
 
 #
 # .SYNOPSIS

@@ -1,10 +1,10 @@
-﻿#
+#
 # .SYNOPSIS
 #
 #    Auto-complete the -Location parameter value for Azure PowerShell cmdlets. (version 1.0)
 #
 # .NOTES
-#    
+#
 #    Created by Stuart Leeks
 #    http://blogs.msdn.com/stuartleeks
 #    http://twitter.com/stuartleeks
@@ -28,7 +28,7 @@ function AzureGeneral_LocationCompleter
         # Update the cache for Azure locations
         Set-CompletionPrivateData -Key $CacheKey -Value $ItemList
     }
-    
+
     ### Return the fresh completion results
     $wordToCompleteWildcard = $wordToComplete.Trim("'") + "*"
 
@@ -53,5 +53,5 @@ Register-ArgumentCompleter `
     -Parameter 'Location' `
     -Description 'Complete the -Location parameter value for Azure cmdlets: New-AzureRmResourceGroup -Location <TAB>' `
     -ScriptBlock $function:AzureGeneral_LocationCompleter
-    
+
 

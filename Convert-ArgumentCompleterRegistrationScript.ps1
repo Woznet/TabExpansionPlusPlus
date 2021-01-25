@@ -1,9 +1,8 @@
-﻿
 param(
     [Parameter(ValueFromPipelineByPropertyName = $true, Mandatory, Position = 0)]
     [Alias("PSPath")]
     [string]$Path,
-    
+
     [string]$OutputPath
 )
 

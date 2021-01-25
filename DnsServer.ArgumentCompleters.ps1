@@ -43,7 +43,7 @@ function DNSServer_ResourceRecordNameArgumentCompletion
     if($CIMSession) { $optionalParams.CimSession   = $CIMSession }
     if($ZoneName)   { $optionalParams.ZoneName     = $ZoneName }
     if($RRType)     { $optionalParams.RRType       = $RRType }
-    # These completions are slow 
+    # These completions are slow
     DnsServer\Get-DnsServerResourceRecord @optionalParams |
         Where-Object {$_.HostName -like "$wordToComplete*"} |
         Sort-Object -Property HostName |

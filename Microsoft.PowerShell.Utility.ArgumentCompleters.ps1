@@ -194,7 +194,7 @@ function DisablePSBreakpointIdCompleter
 {
     param($commandName, $parameterName, $wordToComplete, $commandAst, $fakeBoundParameter)
 
-    Microsoft.PowerShell.Utility\Get-PSBreakpoint | 
+    Microsoft.PowerShell.Utility\Get-PSBreakpoint |
         Where-Object { $_.Enabled -and $_.Id -like "*$wordToComplete*" } |
         ForEach-Object {
             $toolTip = "Script: {0} Type: {1}" -f $_.Script, $_.GetType().Name
@@ -212,7 +212,7 @@ function RemovePSBreakpointIdCompleter
 {
     param($commandName, $parameterName, $wordToComplete, $commandAst, $fakeBoundParameter)
 
-    Microsoft.PowerShell.Utility\Get-PSBreakpoint | 
+    Microsoft.PowerShell.Utility\Get-PSBreakpoint |
         Where-Object { $_.Id -like "*$wordToComplete*" } |
         ForEach-Object {
             $toolTip = "Script: {0} Type: {1}" -f $_.Script, $_.GetType().Name

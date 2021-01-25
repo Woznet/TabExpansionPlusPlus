@@ -15,7 +15,7 @@ function PnpDevice_InstanceIdArgumentCompletion
     PnpDevice\Get-PnpDevice -FriendlyName "$wordToComplete*" @optionalCimSession |
         Sort-Object -Property FriendlyName |
         ForEach-Object {
-            $ToolTip = "Name: {0} - Status: {1} - Class: {2} `nID: {3}" -f $_.FriendlyName,$_.Status,$_.Class,$_.InstanceId 
+            $ToolTip = "Name: {0} - Status: {1} - Class: {2} `nID: {3}" -f $_.FriendlyName,$_.Status,$_.Class,$_.InstanceId
             New-CompletionResult -CompletionText $_.InstanceId -ToolTip $ToolTip -ListItemText $_.FriendlyName
         }
 }
@@ -34,7 +34,7 @@ function PnpDevice_FriendlyNameArgumentCompletion
     PnpDevice\Get-PnpDevice -FriendlyName "$wordToComplete*" @optionalCimSession |
         Sort-Object -Property FriendlyName |
         ForEach-Object {
-            $ToolTip = "Name: {0} - Status: {1} - Class: {2} `nID: {3}" -f $_.FriendlyName,$_.Status,$_.Class,$_.InstanceId 
+            $ToolTip = "Name: {0} - Status: {1} - Class: {2} `nID: {3}" -f $_.FriendlyName,$_.Status,$_.Class,$_.InstanceId
             New-CompletionResult -CompletionText $_.FriendlyName -ToolTip $ToolTip
         }
 }
@@ -75,7 +75,7 @@ function PnpDevice_KeyNameArgumentCompletion
         Where-Object {$_.KeyName -like "$wordToComplete*"} |
         Sort-Object -Property KeyName |
         ForEach-Object {
-            $ToolTip = "KeyName: {0} - Data: {1} - Type: {2} `nID: {3}" -f $_.KeyName,$_.Data,$_.Type,$_.InstanceId 
+            $ToolTip = "KeyName: {0} - Data: {1} - Type: {2} `nID: {3}" -f $_.KeyName,$_.Data,$_.Type,$_.InstanceId
             New-CompletionResult -CompletionText $_.KeyName -ToolTip $ToolTip
         }
 }

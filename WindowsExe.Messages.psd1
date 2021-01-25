@@ -162,7 +162,7 @@ NET HELP NAMES explains different types of names in NET HELP syntax lines.
 '@
 
 net_HELP_SERVICES = @'
-NET HELP SERVICES lists some of the services you can start.    
+NET HELP SERVICES lists some of the services you can start.
 '@
 
 net_HELP_SYNTAX = @'
@@ -998,7 +998,7 @@ netsh_http_add_cacheparam = @'
 Adds an HTTP service cache parameter
 '@
 netsh_http_add_iplisten = @'
-Adds an IP address to the IP listen list. 
+Adds an IP address to the IP listen list.
 '@
 netsh_http_add_sslcert = @'
 Adds an SSL server certificate binding.
@@ -1007,7 +1007,7 @@ netsh_http_add_timeout = @'
 Adds a global timeout to the service.
 '@
 netsh_http_add_urlacl = @'
-Adds an URL reservation entry. 
+Adds an URL reservation entry.
 '@
 netsh_http_delete = @'
 Deletes a configuration entry from a table.
@@ -1016,16 +1016,16 @@ netsh_http_delete_cache = @'
 Deletes entries from the HTTP service kernel URI cache.
 '@
 netsh_http_delete_iplisten = @'
-Deletes an IP address from the IP listen list. 
+Deletes an IP address from the IP listen list.
 '@
 netsh_http_delete_sslcert = @'
 Deletes SSL certificate bindings.
 '@
 netsh_http_delete_timeout = @'
-Deletes a global timeout. 
+Deletes a global timeout.
 '@
 netsh_http_delete_urlacl = @'
-Deletes a URL reservation. 
+Deletes a URL reservation.
 '@
 netsh_http_dump = @'
 Displays a configuration script.
@@ -1055,13 +1055,13 @@ netsh_http_show_servicestate = @'
 Shows a snapshot of the HTTP service.
 '@
 netsh_http_show_sslcert = @'
-Displays SSL certificate bindings. 
+Displays SSL certificate bindings.
 '@
 netsh_http_show_timeout = @'
 Shows the timeout values of the service.
 '@
 netsh_http_show_urlacl = @'
-Displays URL namespace reservations. 
+Displays URL namespace reservations.
 '@
 netsh_interface = @'
 Changes to the `netsh interface' context.
@@ -1523,7 +1523,7 @@ netsh_lan_set = @'
 Configures settings on interfaces.
 '@
 netsh_lan_set_allowexplicitcreds = @'
-Allow or disallow the user to use shared user 
+Allow or disallow the user to use shared user
 '@
 netsh_lan_set_autoconfig = @'
 Enables or disables auto-configuration on an interface.
@@ -1865,7 +1865,7 @@ netsh_ras_aaaa_set_authserver = @'
 Sets properties of an authentication server.
 '@
 netsh_ras_aaaa_set_ipsecpolicy = @'
-Sets the IPsec policy for L2TP connection. 
+Sets the IPsec policy for L2TP connection.
 '@
 netsh_ras_aaaa_show = @'
 Displays information.
@@ -1898,7 +1898,7 @@ netsh_ras_add_multilink = @'
 Adds to the list of multilink types PPP will negotiate
 '@
 netsh_ras_add_registeredserver = @'
-Registers the given Windows computer as a 
+Registers the given Windows computer as a
 '@
 netsh_ras_delete = @'
 Removes items from a table.
@@ -1913,7 +1913,7 @@ netsh_ras_delete_multilink = @'
 Deletes from the list of multilink types PPP will negotiate
 '@
 netsh_ras_delete_registeredserver = @'
-Un-registers the given Windows computer as a 
+Un-registers the given Windows computer as a
 '@
 netsh_ras_diagnostics = @'
 Changes to the `netsh ras diagnostics' context.
@@ -1931,7 +1931,7 @@ netsh_ras_diagnostics_set_cmtracing = @'
 Enables/disables Connection Manager logging.
 '@
 netsh_ras_diagnostics_set_loglevel = @'
-Sets  the global Log level for RRAS 
+Sets  the global Log level for RRAS
 '@
 netsh_ras_diagnostics_set_modemtracing = @'
 Enables or disables tracing of modem settings and messages during a network connection.
@@ -1961,7 +1961,7 @@ netsh_ras_diagnostics_show_installation = @'
 Installation Info.
 '@
 netsh_ras_diagnostics_show_loglevel = @'
-Shows the global Log level for RRAS 
+Shows the global Log level for RRAS
 '@
 netsh_ras_diagnostics_show_logs = @'
 Shows all logs.
@@ -2036,7 +2036,7 @@ netsh_ras_ip_show_config = @'
 Displays current Remote Access IP configuration.
 '@
 netsh_ras_ip_show_preferredadapter = @'
-Shows the preferred adapter for Routing and Remote 
+Shows the preferred adapter for Routing and Remote
 '@
 netsh_ras_set = @'
 Sets configuration information.
@@ -2045,22 +2045,22 @@ netsh_ras_set_authmode = @'
 Sets the authentication mode.
 '@
 netsh_ras_set_client = @'
-Reset the statistics or disconnect a Remote Access Client. 
+Reset the statistics or disconnect a Remote Access Client.
 '@
 netsh_ras_set_conf = @'
-Sets the configuration state of the server. 
+Sets the configuration state of the server.
 '@
 netsh_ras_set_portstatus = @'
-Resets the statistics information of RAS ports. 
+Resets the statistics information of RAS ports.
 '@
 netsh_ras_set_type = @'
-Sets the Router and RAS functionalities of the computer. 
+Sets the Router and RAS functionalities of the computer.
 '@
 netsh_ras_set_user = @'
 Sets the Remote Access properties of a user.
 '@
 netsh_ras_set_wanports = @'
-Sets the RAS WAN ports options. 
+Sets the RAS WAN ports options.
 '@
 netsh_ras_show = @'
 Displays information.
@@ -2075,10 +2075,10 @@ netsh_ras_show_authtype = @'
 Displays the authentication types currently enabled.
 '@
 netsh_ras_show_client = @'
-Shows Remote Access clients connected to this machine 
+Shows Remote Access clients connected to this machine
 '@
 netsh_ras_show_conf = @'
-Shows the configuration state of the server. 
+Shows the configuration state of the server.
 '@
 netsh_ras_show_link = @'
 Shows the link properties PPP will negotiate
@@ -2087,31 +2087,31 @@ netsh_ras_show_multilink = @'
 Shows the multilink types PPP will negotiate
 '@
 netsh_ras_show_portstatus = @'
-Shows the current status of RAS ports.  
+Shows the current status of RAS ports.
 '@
 netsh_ras_show_registeredserver = @'
-Displays whether a computer is registered as a  
+Displays whether a computer is registered as a
 '@
 netsh_ras_show_status = @'
-Shows the status of the Routing and Remote Access Server. 
+Shows the status of the Routing and Remote Access Server.
 '@
 netsh_ras_show_type = @'
-Shows the Router and RAS functionalities of the computer. 
+Shows the Router and RAS functionalities of the computer.
 '@
 netsh_ras_show_user = @'
 Displays Remote Access properties for a user(s).
 '@
 netsh_ras_show_wanports = @'
-Shows the options set for RAS WAN ports. 
+Shows the options set for RAS WAN ports.
 '@
 netsh_rpc = @'
 Changes to the `netsh rpc' context.
 '@
 netsh_rpc_add = @'
-Creates an Add list of subnets. 
+Creates an Add list of subnets.
 '@
 netsh_rpc_delete = @'
-Creates a Delete list of subnets. 
+Creates a Delete list of subnets.
 '@
 netsh_rpc_dump = @'
 Displays a configuration script.
@@ -2120,25 +2120,25 @@ netsh_rpc_filter = @'
 Changes to the `netsh rpc filter' context.
 '@
 netsh_rpc_filter_add = @'
-Adds configuration entry to a table. 
+Adds configuration entry to a table.
 '@
 netsh_rpc_filter_add_condition = @'
-Adds a condition to an existing RPC firewall filter rule. 
+Adds a condition to an existing RPC firewall filter rule.
 '@
 netsh_rpc_filter_add_filter = @'
-Adds an RPC firewall filter. 
+Adds an RPC firewall filter.
 '@
 netsh_rpc_filter_add_rule = @'
-Adds an RPC firewall filter rule. 
+Adds an RPC firewall filter rule.
 '@
 netsh_rpc_filter_delete = @'
-Deletes configuration entry from a table. 
+Deletes configuration entry from a table.
 '@
 netsh_rpc_filter_delete_filter = @'
-Deletes RPC firewall filter(s). 
+Deletes RPC firewall filter(s).
 '@
 netsh_rpc_filter_delete_rule = @'
-Deletes the RPC firewall filter rule. 
+Deletes the RPC firewall filter rule.
 '@
 netsh_rpc_filter_dump = @'
 Displays a configuration script.
@@ -2147,16 +2147,16 @@ netsh_rpc_filter_help = @'
 Displays a list of commands.
 '@
 netsh_rpc_filter_show = @'
-Displays information. 
+Displays information.
 '@
 netsh_rpc_filter_show_filter = @'
-Lists all RPC firewall filters. 
+Lists all RPC firewall filters.
 '@
 netsh_rpc_help = @'
 Displays a list of commands.
 '@
 netsh_rpc_reset = @'
-Resets the selective binding settings to 'none' (listen on all interfaces). 
+Resets the selective binding settings to 'none' (listen on all interfaces).
 '@
 netsh_rpc_show = @'
 Displays the selective binding state for each subnet on the system.
@@ -2252,7 +2252,7 @@ netsh_wfp_capture = @'
 Captures real-time diagnostic information.
 '@
 netsh_wfp_capture_start = @'
-Starts an interactive capture session. 
+Starts an interactive capture session.
 '@
 netsh_wfp_capture_status = @'
 Tells whether an interactive capture session is in progress.
@@ -2276,28 +2276,28 @@ netsh_wfp_show = @'
 Shows WFP configuration and state.
 '@
 netsh_wfp_show_appid = @'
-Displays the application ID for the specified file. 
+Displays the application ID for the specified file.
 '@
 netsh_wfp_show_boottimepolicy = @'
-Displays the boot-time policy and filters. 
+Displays the boot-time policy and filters.
 '@
 netsh_wfp_show_filters = @'
 Displays filters matching the specified traffic parameters.
 '@
 netsh_wfp_show_netevents = @'
-Displays recent network events matching the traffic parameters. 
+Displays recent network events matching the traffic parameters.
 '@
 netsh_wfp_show_options = @'
-Displays the global WFP options. 
+Displays the global WFP options.
 '@
 netsh_wfp_show_security = @'
-Displays the specified security descriptor. 
+Displays the specified security descriptor.
 '@
 netsh_wfp_show_state = @'
 Displays the current state of WFP and IPsec.
 '@
 netsh_wfp_show_sysports = @'
-Displays system ports used by the TCP/IP Stack and the RPC sub-system. 
+Displays system ports used by the TCP/IP Stack and the RPC sub-system.
 '@
 netsh_winhttp = @'
 Changes to the `netsh winhttp' context.
@@ -2348,7 +2348,7 @@ netsh_winsock_audit = @'
 Displays a list of Winsock LSPs that have been installed and removed.
 '@
 netsh_winsock_audit_trail = @'
-Shows the audit trail of Layered Service Providers that have been installed and uninstalled. 
+Shows the audit trail of Layered Service Providers that have been installed and uninstalled.
 '@
 netsh_winsock_dump = @'
 Displays a configuration script.
@@ -2435,7 +2435,7 @@ netsh_wlan_set = @'
 Sets configuration information.
 '@
 netsh_wlan_set_allowexplicitcreds = @'
-Allow or disallow the user to use shared user 
+Allow or disallow the user to use shared user
 '@
 netsh_wlan_set_autoconfig = @'
 Enable or disable auto configuration logic on interface.
@@ -2459,7 +2459,7 @@ netsh_wlan_set_profileparameter = @'
 Set parameters in a wireless network profile.
 '@
 netsh_wlan_set_profiletype = @'
-Set profile type to alluser or peruser. 
+Set profile type to alluser or peruser.
 '@
 netsh_wlan_set_tracing = @'
 Enable or disable tracing.

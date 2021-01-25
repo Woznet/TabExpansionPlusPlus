@@ -47,7 +47,7 @@ function New-CompletionResult
 
           [System.Management.Automation.CompletionResultType]
           $CompletionResultType = [System.Management.Automation.CompletionResultType]::ParameterValue,
- 
+
           [Parameter(Mandatory = $false)]
           [switch] $NoQuotes = $false
           )
@@ -167,7 +167,7 @@ function Get-CompletionPrivateData
         [string]
         $Key)
 
-    if(!$Key) 
+    if(!$Key)
     { return $completionPrivateData }
 
     $cacheValue = $completionPrivateData[$key]
@@ -405,7 +405,7 @@ function Register-ArgumentCompleter
     $fnDefn = $ScriptBlock.Ast -as [System.Management.Automation.Language.FunctionDefinitionAst]
     if (!$Description)
     {
-        # See if the script block is really a function, if so, use the function name.        
+        # See if the script block is really a function, if so, use the function name.
         $Description = if ($fnDefn -ne $null) { $fnDefn.Name } else { "" }
     }
 
@@ -513,7 +513,7 @@ function Test-ArgumentCompleter
 # PowerShell session.
 #
 # .PARAMETER Name
-# The name of the argument complete to retrieve. This parameter supports 
+# The name of the argument complete to retrieve. This parameter supports
 # wildcards (asterisk).
 #
 # .EXAMPLE

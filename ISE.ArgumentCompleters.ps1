@@ -1,4 +1,4 @@
-﻿## ISE custom Completers ##
+## ISE custom Completers ##
 
 #
 # .SYNOPSIS

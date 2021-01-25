@@ -1,10 +1,10 @@
-﻿#
+#
 # .SYNOPSIS
 #
 #    Auto-complete the -StorageAccountName parameter value for Azure PowerShell cmdlets.
 #
 # .NOTES
-#    
+#
 #    Created by Trevor Sullivan <pcgeek86@gmail.com>
 #    http://trevorsullivan.net
 #
@@ -42,7 +42,7 @@ function StorageAccount_StorageAccountNameCompleter
 #    Auto-complete the -Name parameter value for Azure PowerShell storage container cmdlets.
 #
 # .NOTES
-#    
+#
 #    Created by Trevor Sullivan <pcgeek86@gmail.com>
 #    http://trevorsullivan.net
 #
@@ -78,7 +78,7 @@ function AzureStorage_StorageContainerNameCompleter
 #    Auto-complete the -ServiceName parameter value for Azure PowerShell cmdlets.
 #
 # .NOTES
-#    
+#
 #    Created by Trevor Sullivan <pcgeek86@gmail.com>
 #    http://trevorsullivan.net
 #
@@ -113,7 +113,7 @@ function CloudService_ServiceNameCompleter
 #    Auto-complete the -SubscriptionName parameter value for Azure PowerShell cmdlets.
 #
 # .NOTES
-#    
+#
 #    Created by Trevor Sullivan <pcgeek86@gmail.com>
 #    http://trevorsullivan.net
 #
@@ -142,7 +142,7 @@ function Subscription_SubscriptionNameCompleter
             }
         New-CompletionResult @CompletionResult
     }
-    
+
     ### Update the cache for Azure subscription names
     Set-CompletionPrivateData -Key $CacheKey -Value $ItemList
 
@@ -156,7 +156,7 @@ function Subscription_SubscriptionNameCompleter
 #    Auto-complete the -Name parameter value for Azure PowerShell virtual machine cmdlets.
 #
 # .NOTES
-#    
+#
 #    Created by Trevor Sullivan <pcgeek86@gmail.com>
 #    http://trevorsullivan.net
 #    http://twitter.com/pcgeek86
@@ -186,7 +186,7 @@ function AzureVirtualMachine_NameCompleter
             }
         New-CompletionResult @CompletionResult
     }
-    
+
     ### Update the cache for Azure virtual machines
     Set-CompletionPrivateData -Key $CacheKey -Value $ItemList
 

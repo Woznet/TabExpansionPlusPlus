@@ -1,4 +1,4 @@
-﻿## Hyper-V module Custom Completers ##
+## Hyper-V module Custom Completers ##
 
 #
 # .SYNOPSIS

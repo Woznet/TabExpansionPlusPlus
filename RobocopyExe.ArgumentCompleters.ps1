@@ -1,16 +1,16 @@
-﻿
+
 
 function RobocopyExeCompletion
 {
-            
-    param($wordToComplete, $commandAst) 
+
+    param($wordToComplete, $commandAst)
 
     #
     # .SYNOPSIS
     #
     #     Complete parameters and arguments to Robocopy.exe
     #
-    function Get-RoboCopyArguments { 
+    function Get-RoboCopyArguments {
         [PSCustomObject]@{Argument='/S'; ToolTip='copy Subdirectories, but not empty ones'}
         [PSCustomObject]@{Argument='/E'; ToolTip='copy subdirectories, including Empty ones'}
         [PSCustomObject]@{Argument='/Z'; ToolTip='copy files in restartable mode'}
@@ -98,10 +98,10 @@ function RobocopyExeCompletion
         [PSCustomObject]@{Argument='/FFT'; ToolTip='assume FAT File Times (2-second granularity)'}
         [PSCustomObject]@{Argument='/DST'; ToolTip='compensate for one-hour DST time differences'}
         [PSCustomObject]@{Argument='/XJD'; ToolTip='eXclude Junction points for Directories'}
-        [PSCustomObject]@{Argument='/XJF'; ToolTip='eXclude Junction points for Files'}    
+        [PSCustomObject]@{Argument='/XJF'; ToolTip='eXclude Junction points for Files'}
     }
 
-    Get-RoboCopyArguments | 
+    Get-RoboCopyArguments |
         Where-Object {$_.argument -like "$wordToComplete*"} |
         Sort-Object Argument |
         ForEach-Object {

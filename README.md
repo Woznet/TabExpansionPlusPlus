@@ -1,4 +1,4 @@
-﻿TabExpansionPlusPlus
+TabExpansionPlusPlus
 ====================
 *Important note:* The module was formerly known as TabExpansion++.  It is now TabExpansionPlusPlus.
 
@@ -65,7 +65,7 @@ function VerbCompletion {
     Get-Verb "$wordToComplete*" |
         ForEach-Object {
             New-CompletionResult -CompletionText $_.Verb -ToolTip ("Group: " + $_.Group)
-        }   
+        }
 }
 ```
 

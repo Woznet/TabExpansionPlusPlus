@@ -25,14 +25,14 @@ function DhcpServer_v4ScopeIdArgumentCompletion
     if($ComputerName) { $optionalParams.ComputerName = $ComputerName }
     if($CIMSession)   { $optionalParams.CimSession   = $CIMSession }
 
-    $CacheKey = if($ComputerName)   { "DHCPServer_v4Scope_$ComputerName" } 
+    $CacheKey = if($ComputerName)   { "DHCPServer_v4Scope_$ComputerName" }
                 elseif($CIMSession) { "DHCPServer_v4Scope_$CimSession" }
                 else { "DHCPServer_v4Scope" }
     $Cache = Get-CompletionPrivateData -Key $CacheKey
-    if($Cache) { 
-        $List = $Cache 
-    } else { 
-        $List = DhcpServer\Get-DhcpServerv4Scope @optionalParams   # This completion is slow 
+    if($Cache) {
+        $List = $Cache
+    } else {
+        $List = DhcpServer\Get-DhcpServerv4Scope @optionalParams   # This completion is slow
         Set-CompletionPrivateData -Key $CacheKey -Value $List -ExpirationSeconds 900 # Expiration: 15 min
     }
 

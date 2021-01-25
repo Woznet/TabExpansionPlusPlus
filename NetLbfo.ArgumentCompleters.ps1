@@ -12,7 +12,7 @@ function NetLBFO_TeamMembersArgumentCompletion
         $optionalCim.CimSession = $cim
     }
 
-    NetAdapter\Get-NetAdapter -Name "$wordToComplete*" @optionalCim | 
+    NetAdapter\Get-NetAdapter -Name "$wordToComplete*" @optionalCim |
         Sort-Object -Property Name |
         ForEach-Object {
             $ToolTip = "Name: {0} - Status: {1} `nInterface: {2} - Speed: {3}" -f $_.Name,$_.Status,$_.InterfaceDescription,$_.LinkSpeed
@@ -32,7 +32,7 @@ function NetLBFO_TeamNameArgumentCompletion
         $optionalCim.CimSession = $cim
     }
 
-    NetLbfo\Get-NetLbfoTeam -Name "$wordToComplete*" @optionalCim | 
+    NetLbfo\Get-NetLbfoTeam -Name "$wordToComplete*" @optionalCim |
         Sort-Object -Property Name |
         ForEach-Object {
             $ToolTip = "Name: {0} - Status: {1} `nMode: {2} - Algorithm: {3}" -f $_.Name,$_.Status,$_.TeamingMode,$_.LoadBalancingAlgorithm
@@ -62,4 +62,4 @@ Register-ArgumentCompleter `
     -Parameter 'Team' `
     -Description 'Complete NetLBFO Team names, for example: Get-NetLbfoTeamNic -Team <TAB>' `
     -ScriptBlock $function:NetLBFO_TeamNameArgumentCompletion
-    
+
